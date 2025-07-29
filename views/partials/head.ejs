@@ -1,0 +1,58 @@
+<%
+  const pageTitle = typeof title !== 'undefined' ? title : "BR Studio – Capturing Moments";
+  const pageDescription = typeof description !== 'undefined' ? description : "Book professional wedding, baby, and event shoots with BR Studio. Premium packages for 2025-26 now open!";
+  const pageCanonical = typeof canonical !== 'undefined' ? canonical : "https://yourdomain.com/";
+  const pageOgTitle = typeof ogTitle !== 'undefined' ? ogTitle : pageTitle;
+  const pageOgDescription = typeof ogDescription !== 'undefined' ? ogDescription : pageDescription;
+  const pageOgImage = typeof ogImage !== 'undefined' ? ogImage : "/images/Br_logo.jpeg";
+  const pageOgUrl = typeof ogUrl !== 'undefined' ? ogUrl : pageCanonical;
+  const pageTwitterTitle = typeof twitterTitle !== 'undefined' ? twitterTitle : pageTitle;
+  const pageTwitterDescription = typeof twitterDescription !== 'undefined' ? twitterDescription : pageDescription;
+  const pageTwitterImage = typeof twitterImage !== 'undefined' ? twitterImage : pageOgImage;
+%>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title><%= pageTitle %></title>
+  <meta name="description" content="<%= pageDescription %>">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="<%= pageCanonical %>">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="<%= pageOgTitle %>" />
+  <meta property="og:description" content="<%= pageOgDescription %>" />
+  <meta property="og:image" content="<%= pageOgImage %>" />
+  <meta property="og:url" content="<%= pageOgUrl %>" />
+  <meta property="og:site_name" content="BR Studio" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="<%= pageTwitterTitle %>" />
+  <meta name="twitter:description" content="<%= pageTwitterDescription %>" />
+  <meta name="twitter:image" content="<%= pageTwitterImage %>" />
+
+  <!-- Favicon -->
+      <link rel="icon" href="/images/Br_logo.jpeg" type="image/x-icon">
+
+  <!-- Stylesheets -->
+        <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "BR Studio",
+      "url": "https://yourdomain.com",
+      "logo": "https://yourdomain.com/images/logo.png",
+      "sameAs": [
+        "https://www.instagram.com/yourhandle",
+        "https://www.facebook.com/yourpage"
+      ]
+    }
+  </script>
+</head>

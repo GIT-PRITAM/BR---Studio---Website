@@ -1,0 +1,234 @@
+<% layout("/layouts/boilerplate") %>
+
+<!-- BOOKING SECTION -->
+<section class="booking-section py-5 mb-2">
+  <div class="container">
+    <div class="row align-items-center min-vh-50">
+
+      <!-- Left Side Cards -->
+      <div class="col-md-6 d-flex flex-column gap-5 mt-4 pt-4">
+
+        <!-- Call Card -->
+        <div class="contact-method-card red-card shadow-sm">
+          <a href="tel:+91 9679329462" class="text-decoration-none text-white d-block w-100 h-100">
+            <h5 class="m-0">📞 Call us here</h5>
+          </a>
+        </div>
+
+        <!-- WhatsApp Card -->
+        <div class="contact-method-card green-card shadow-sm">
+          <a href="https://wa.me/919679329462" target="_blank" class="text-decoration-none text-white d-block w-100 h-100">
+            <h5 class="m-0">💬 Chat on Whatsapp</h5>
+          </a>
+        </div>
+
+        <!-- Email Card -->
+        <div class="contact-method-card gray-card shadow-sm">
+          <a href="mailto:brstudiohelp@gmail.com" class="text-decoration-none text-white d-block w-100 h-100">
+            <h5 class="m-0">✉️ Drop an Email</h5>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Side Heading -->
+      <div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center pt-5 pb-5">
+        <h1 class="book-now-heading display-4 fw-bold text-uppercase mb-3">
+          <span class="text-danger">Book</span> <span class="text-dark">Now</span>
+        </h1>
+        <p class="fs-5" style="color: #150d63;">
+          Book now by clicking on the links
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- CONTACT SECTION -->
+<section class="contact-section-full p-3 mb-2">
+  <div class="container">
+    <div class="row align-items-center contact-inner-row">
+
+      <!-- Left Column -->
+      <div class="col-md-6 text-center d-flex flex-column justify-content-center align-items-center mb-4 mb-md-0">
+        <h1 class="display-5 fw-bold text-danger">BR Production</h1>
+        <h1 class="display-5 fw-bold text-dark mt-2">BR Studio</h1>
+        <p class="mt-3 fs-5" style="color: #150d63;">
+          Visit our Facebook pages by clicking on the images
+        </p>
+      </div>
+
+      <!-- Right Column (Cards Side-by-Side) -->
+      <div class="col-md-6 mt-5 mb-5">
+        <div class="d-flex flex-wrap justify-content-center gap-4">
+          <a href="https://www.facebook.com/share/1L5BawWFjw/" target="_blank" class="card-link">
+            <div class="card contact-card shadow-sm border-0 overflow-hidden">
+              <img src="/images/br_social1.png" class="card-img-top object-fit-cover" alt="BR Production Facebook">
+            </div>
+          </a>
+          <a href="https://www.facebook.com/share/1ArLj8Poei/" target="_blank" class="card-link">
+            <div class="card contact-card shadow-sm border-0 overflow-hidden">
+              <img src="/images/br_social2.png" class="card-img-top object-fit-cover" alt="BR Studio Facebook">
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="cofounder-section py-5">
+  <div class="container text-center">
+    <!-- Heading -->
+    <h2 class="cofounder-heading mb-5">
+      <span class="text-red">CO - </span><span class="text-black">FOUNDERS</span>
+    </h2>
+
+    <!-- Cards -->
+    <div class="row justify-content-center">
+      <!-- Card 1 -->
+      <div class="col-md-5 mb-4">
+        <a href="https://www.facebook.com/share/1APMEMjaXx/" target="_blank" class="cofounder-card d-block p-3 text-decoration-none">
+          <img src="/images/1000122218 (2).jpg" alt="Founder 1" class="img-fluid rounded mb-2" />
+          <p class="founder-name fs-4 text-white">RAHUL BISWAS</p>
+        </a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-5 mb-4">
+        <a href="https://www.facebook.com/share/14Goj7MrKLr/" target="_blank" class="cofounder-card d-block p-3 text-decoration-none">
+          <img src="/images/FB_IMG_1752609859114.jpg" alt="Founder 2" class="img-fluid rounded mb-2" />
+          <p class="founder-name fs-4 text-white">BIKRAM GHOSH</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- STYLE SECTION -->
+<style>
+/* Contact Section */
+.contact-section-full {
+  background-color: #eeeef4;
+}
+.contact-inner-row {
+  min-height: 600px; /* Increased for larger height */
+}
+
+/* Facebook Cards */
+.card-link {
+  text-decoration: none;
+}
+.contact-card {
+  width: 280px;
+  height: 450px;
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.contact-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* Booking Section Background */
+.booking-section {
+  background-color: #f9eded;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  min-height: 35rem;
+}
+
+/* Book Now Heading */
+.book-now-heading {
+  font-size: 3.5rem;
+}
+
+/* Contact Method Cards */
+.contact-method-card {
+  padding: 25px 30px;
+  border-radius: 18px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+.contact-method-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+.contact-method-card h5 {
+  font-weight: 500;
+}
+
+/* Card Colors */
+.red-card {
+  background-color: #e75967;
+}
+.green-card {
+  background-color: #67df91; /* Lighter pleasant green */
+}
+.gray-card {
+  background-color: #6fb4e9;
+}
+
+/* Co-founder Section */
+
+.cofounder-section {
+  background-color: #f9eded;
+}
+/* Heading Styling */
+.cofounder-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.text-red {
+  color: #e75967;
+}
+
+.text-black {
+  color: #000;
+}
+
+/* Card Styling */
+.cofounder-card {
+  background: #f57986;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  color: #000;
+  height: 500px;
+  max-width: 450px;
+  
+}
+
+.cofounder-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.founder-name {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Responsive image */
+.cofounder-card img {
+  height: 420px;
+  object-fit: cover;
+  width: 100%;
+}
+
+</style>

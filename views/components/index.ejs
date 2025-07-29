@@ -1,0 +1,233 @@
+<% layout("/layouts/boilerplate") %>
+
+<!-- ✅ Hero Section with Bootstrap + Custom Styling -->
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  .hero-section {
+    background: linear-gradient(to right, #c31414, #f18650);
+    padding: 60px 0;
+    color: white;
+  }
+
+  .hero-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .hero-heading .production {
+    color: #071f36; /* Navy Blue */
+  }
+
+  .image-wrapper img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+
+  .image-wrapper img:hover {
+    transform: scale(1.05);
+  }
+
+  .experience-section {
+    padding: 60px 20px;
+    background: #eeeef4;
+    text-align: center;
+  }
+
+  .experience-heading {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #222;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+  }
+
+  .experience-heading .highlight {
+    color: #c31414; /* Red */
+  }
+
+  .gallery-row {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .gallery-row img {
+    width: 260px;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+  }
+
+  .gallery-row img:hover {
+    transform: scale(1.05);
+  }
+
+  /* ✅ Services Section */
+  .services-section {
+    background: #f9eded; /* light pink complementary shade */
+    padding: 80px 0;
+  }
+
+  .services-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #1b064f;
+  }
+
+  .service-card {
+    border: none;
+    border-radius: 16px;
+    height: 420px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    background-color: #e33d4e; 
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-img-wrapper {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .service-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+    transition: transform 0.3s ease;
+  }
+
+  .service-card:hover .service-image {
+    transform: scale(1.05);
+  }
+
+  .white-divider {
+    height: 4px;
+    width: 100%;
+    background-color: #ffffff;
+  }
+
+  .service-card-body {
+    padding: 20px;
+    text-align: center;
+    background: transparent;
+  }
+
+  .service-card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+
+  .service-card-text {
+    font-size: 1.25rem;
+    color: #ffffff;
+  }
+
+  
+</style>
+
+<!-- ✅ Hero Section -->
+<div class="hero-section">
+  <div class="container">
+    <h1 class="hero-heading">
+      BR STUDIO <span class="production">& PRODUCTION</span>
+    </h1>
+    <div class="row justify-content-center g-4">
+      <div class="col-md-6 col-lg-5 image-wrapper">
+        <img src="/images/IMG_5916.jpg" alt="Image 1" class="img-fluid">
+      </div>
+      <div class="col-md-6 col-lg-5 image-wrapper">
+        <img src="/images/DSC_7632.jpg" alt="Image 2" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ✅ Experience Section -->
+<div class="experience-section mt-2">
+  <h2 class="experience-heading">
+    We have Photographers and Cinematographers with <br> <span class="highlight">more than 4 years</span> of experience.
+  </h2>
+
+  <div class="gallery-row">
+    <img src="/images/Rahul_folks.jpg" alt="Photo 1">
+    <img src="/images/FB_IMG_1752609859114.jpg" alt="Photo 2">
+    <img src="/images/FB_IMG_1753040560923.jpg" alt="Photo 3">
+    <img src="/images/Guddu.jpeg" alt="Photo 4">
+    <img src="/images/CHA_0284.jpg" alt="Photo 5">
+  </div>
+</div>
+
+<!-- ✅ Our Services Section -->
+<div class="services-section mt-2">
+  <div class="container">
+    <h2 class="services-title">OUR <span style="color: #c31414;">SERVICES</span></h2>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-6 col-lg-4 d-flex">
+        <div class="card service-card w-100">
+          <div class="card-img-wrapper">
+            <img src="/images/biye.jpeg" alt="Wedding Photography" class="card-img-top service-image">
+          </div>
+          <div class="white-divider"></div>
+          <div class="card-body service-card-body">
+            <h5 class="service-card-title">WEDDING PHOTOGRAPHY</h5>
+            <h6 class="service-card-text">Starting @ 29,999</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 d-flex">
+        <div class="card service-card w-100">
+          <div class="card-img-wrapper">
+            <img src="/images/baccha.jpeg" alt="Cinematography" class="card-img-top service-image">
+          </div>
+          <div class="white-divider"></div>
+          <div class="card-body service-card-body">
+            <h5 class="service-card-title">BABY SHOOT</h5>
+            <h6 class="service-card-text">Starting @ 4,999</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 d-flex">
+        <div class="card service-card w-100">
+          <div class="card-img-wrapper">
+            <img src="/images/IMG_2557.jpg" alt="Event Coverage" class="card-img-top service-image">
+          </div>
+          <div class="white-divider"></div>
+          <div class="card-body service-card-body">
+            <h5 class="service-card-title">EVENT COVERAGE</h5>
+            <h6 class="service-card-text">Starting @ 9,999</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
