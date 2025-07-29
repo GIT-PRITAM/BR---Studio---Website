@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
     res.render("components/index", {
         title: 'BR Studio – Capture Moments',
         description: 'Wedding and event photography with best-in-class services.',
-        canonical: 'https://yourdomain.com/',
+        canonical: 'https://br-studio.onrender.com/',
         ogImage: 'https://yourdomain.com/images/ogimage.jpg'
     });
 });
@@ -26,7 +26,7 @@ app.get('/packages', (req, res) => {
     res.render("components/packages", {
         title: 'Packages & Offers – BR Studio',
         description: 'Explore our exclusive photography packages and limited-time offers for weddings, baby shoots, and events.',
-        canonical: 'https://yourdomain.com/packages',
+        canonical: 'https://br-studio.onrender.com/packages',
         ogImage: 'https://yourdomain.com/images/packages-og.jpg'
     });
 });
@@ -35,7 +35,7 @@ app.get('/contacts', (req, res) => {
     res.render("components/contacts", {
         title: 'Contacts - BR Studio',
         description: 'Get in touch with us for bookings and inquiries.',
-        canonical: 'https://yourdomain.com/contact',
+        canonical: 'https://br-studio.onrender.com/contacts',
         ogImage: 'https://yourdomain.com/images/contact-og.jpg'
     });
 });
